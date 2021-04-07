@@ -43,6 +43,7 @@
 </template>
 <style scoped>
 .form__wrapper {
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   height: 100vh;
   background-color: #9e005d;

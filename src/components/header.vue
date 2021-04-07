@@ -8,7 +8,7 @@
       </div>
 
       <nav>
-        <ul class="head">
+        <ul class="head ">
           <li>
             <router-link to="/">
               home
@@ -40,10 +40,11 @@ export default {
 header {
   position: fixed;
   width: 100%;
-  border-bottom: 1px solid #cccccc;
+  /* border-bottom: 1px solid #cccccc; */
 }
 .active {
   background-color: rgba(0, 0, 0, 0.692);
+  color: aqua;
 }
 .navbar {
   display: flex;

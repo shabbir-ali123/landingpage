@@ -58,7 +58,10 @@
 </template>
 <style scoped>
 p {
-  color: #6b6161;
+}
+h2 {
+  margin-bottom: 85px;
+  margin-top: -39px;
 }
 h5 {
   color: #9e005d;
@@ -67,14 +70,19 @@ h5 {
 h3 {
   color: #4a4545;
 }
+.heading {
+  margin-top: 75px;
+  font-size: 30px;
+}
 .content__wrapper {
   width: 450px;
-  margin-right: 30px;
+  color: #6b6161;
+  margin-top: 153px;
+  font-size: 20px;
 }
 .cards__wrapper {
   display: flex;
   margin: 10px;
-  text-align: center;
 }
 .offer__wrapper {
   display: flex;

@@ -31,7 +31,8 @@
   margin-top: 42px;
 }
 .img__wrapper img {
-  height: 321px;
+  height: 438px;
+  width: 517px;
 }
 
 .detail__wrapper {
