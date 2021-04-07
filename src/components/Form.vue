@@ -90,5 +90,6 @@ button {
   border: none;
   margin-top: 30px;
   font-size: 15px;
+  cursor: pointer;
 }
 </style>

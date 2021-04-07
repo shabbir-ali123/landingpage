@@ -58,6 +58,7 @@
 </template>
 <style scoped>
 p {
+  padding-right: 15px;
 }
 h2 {
   margin-bottom: 85px;
@@ -68,6 +69,7 @@ h5 {
 }
 
 h3 {
+  padding-right: 15px;
   color: #4a4545;
 }
 .heading {
@@ -82,7 +84,7 @@ h3 {
 }
 .cards__wrapper {
   display: flex;
-  margin: 10px;
+  /* margin: 10px; */
 }
 .offer__wrapper {
   display: flex;

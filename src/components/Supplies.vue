@@ -46,9 +46,10 @@ p {
   color: #3e2828;
   font-size: 45px;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 600;
 }
 .upp {
+  margin-top: 30px;
   text-transform: uppercase;
   color: #9e005d;
 }

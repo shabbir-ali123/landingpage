@@ -50,5 +50,6 @@ button {
   /* outline: none; */
   border: none;
   font-size: 15px;
+  cursor: pointer;
 }
 </style>
