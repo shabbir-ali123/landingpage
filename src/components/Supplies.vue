@@ -25,20 +25,27 @@
 </template>
 <style scoped>
 .Supply__content {
+  border-bottom: 2px solid #d1c9c9;
+  margin-top: 110px;
+}
+.Supply__content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 42px;
+  padding-bottom: 46px;
 }
 .img__wrapper img {
   height: 438px;
   width: 517px;
+  box-shadow: 1px solid gray;
 }
 
 .detail__wrapper {
   margin: 30px;
 }
 p {
+  margin-top: 50px;
   font-family: cursive;
   color: #6b6161;
 }
@@ -49,6 +56,7 @@ p {
   font-weight: 600;
 }
 .upp {
+  font-weight: 400;
   margin-top: 30px;
   text-transform: uppercase;
   color: #9e005d;

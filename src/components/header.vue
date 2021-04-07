@@ -50,7 +50,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .navbar .brand img {
   width: 120px;
@@ -69,8 +69,15 @@ a {
   font-size: large;
   color: white;
   font-family: "Josefin Sans", sans-serif;
-  border: 2px solid white;
+  border: 3px solid white;
   background-color: transparent;
+  cursor: pointer;
+  width: 143px;
+  box-shadow: 0px 0px 15px currentcolor;
+}
+.btn:hover {
+  background-color: black;
+  border: 2px solid gray;
 }
 .head li {
   padding: 30px;

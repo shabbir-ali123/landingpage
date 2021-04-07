@@ -1,6 +1,6 @@
 <template>
   <div class="Footer__wrapper ">
-    <div class="wrapp container ">
+    <div class="wrapp ">
       <div class="footer__content ">
         <div class="footer__heading">
           <h2>book your appointment now!</h2>
@@ -30,7 +30,7 @@
 </template>
 <style scoped>
 .Footer__wrapper {
-  height: 40vh;
+  height: 35vh;
   background-color: black;
   color: white;
   font-family: "Josefin Sans", sans-serif;
@@ -45,11 +45,15 @@
 .footer__heading {
   margin-right: 271px;
 }
+.right {
+  margin-top: 37px;
+}
 .footer__icon img {
   height: 40px;
+  padding: 7px;
   background-color: #9e005d;
   border-radius: 100%;
-  width: 45px;
+  width: 40px;
   margin: 10px;
 }
 .copy__wrapper {
@@ -58,8 +62,14 @@
   justify-content: space-around;
 }
 .link {
-  margin-right: 298px;
+  margin-left: 14px;
+  margin-right: 364px;
   display: flex;
   justify-content: space-around;
+  margin-top: 40px;
+  padding-bottom: 0px;
+}
+.icons img:hover {
+  background-color: palevioletred;
 }
 </style>

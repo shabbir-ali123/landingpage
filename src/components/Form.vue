@@ -53,26 +53,32 @@ p {
   font-family: "Josefin Sans", sans-serif;
   display: inline-block;
   width: 400px;
+  margin-top: 5px;
+  margin: 0px;
+  padding: 0px;
 }
 h2 {
+  padding-top: 35px;
   text-transform: uppercase;
   color: white;
   font-family: "Josefin Sans", sans-serif;
-  font-size: xx-large;
+  font-size: 40px;
 }
 .form__content {
-  margin-top: -20px;
   padding: 20px;
 }
 input {
-  height: 10px;
-  width: 250px;
+  height: 55px;
+  width: 360px;
   /* margin-top: 10px; */
-  margin: 5px;
-  height: 30px;
+  margin: 7px;
+}
+::-webkit-input-placeholder {
+  padding-left: 10px;
 }
 textarea {
-  width: 520px;
+  /* width: 520px; */
+  width: 741px;
   height: 83px;
   margin-top: 18px;
 }
@@ -88,8 +94,12 @@ button {
   height: 44px;
   /* outline: none; */
   border: none;
+  box-shadow: 0px 0px 15px currentcolor;
   margin-top: 30px;
   font-size: 15px;
   cursor: pointer;
+}
+button:hover {
+  background-color: palevioletred;
 }
 </style>

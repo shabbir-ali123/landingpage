@@ -1,6 +1,6 @@
 <template>
   <div class="sale__wrapper">
-    <div class="sale__content">
+    <div class="sale__content ">
       <div class="sale__heading">
         <h2 class="heading">
           save upto <span class="discount">30% off </span><br />
@@ -17,13 +17,16 @@
 </template>
 <style scoped>
 .sale__wrapper {
-  background-image: url(../assets/img/3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/img/3.jpg);
   height: 100vh;
   text-align: center;
   color: white;
 }
 .sale__heading {
-  padding: 203px;
+  padding-top: 264px;
 }
 .discount {
   color: palevioletred;
@@ -36,9 +39,10 @@
   text-transform: uppercase;
 }
 p {
+  margin-left: 549px;
   width: 400px;
-  margin-left: 268px;
   font-family: sans-serif;
+  margin-top: 24px;
 }
 button {
   border-radius: 38px;
@@ -51,5 +55,10 @@ button {
   border: none;
   font-size: 15px;
   cursor: pointer;
+  margin-top: 43px;
+  box-shadow: 0px 0px 15px currentcolor;
+}
+button:hover {
+  background-color: palevioletred;
 }
 </style>

@@ -3,7 +3,7 @@
     <section id="heroSection">
       <div class="container">
         <div class="wrapper">
-          <h2 class="heading">get your stylish</h2>
+          <h2 class="home__heading">get your stylish</h2>
           <h2 class="look">look today</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur<br />
@@ -40,15 +40,20 @@ export default {
 </script>
 <style>
 #heroSection {
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url(../assets/img/2.jpg);
   height: 100vh;
   display: flex;
   align-items: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #fff;
 }
 p {
+  text-transform: capitalize;
   margin-left: 7px;
+  padding-bottom: 10px;
+  margin-top: -31px;
 }
 .btn1 {
   border-radius: 38px;
@@ -59,14 +64,19 @@ p {
   height: 44px;
   /* outline: none; */
   border: none;
+  box-shadow: 0px 0px 15px currentcolor;
   font-size: 15px;
   margin-left: 3px;
+}
+.btn1:hover {
+  background-color: hotpink;
+  cursor: pointer;
 }
 .wrapper {
   margin-top: 133px;
 }
-.heading {
-  margin-bottom: -51px;
+.home__heading {
+  margin-bottom: -44px;
   text-transform: uppercase;
   font-size: 35px;
 }
