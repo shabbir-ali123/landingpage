@@ -10,7 +10,6 @@
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
             eveniet unde incidunt error praesentium in sapiente placeat esse
-            beatae omnis.
           </p>
         </div>
       </div>
@@ -23,7 +22,7 @@
             </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, neque!
+              Praesentium, neque! Lorem ipsum dolor sit amet consectetur.
             </p>
           </div>
         </div>
@@ -35,7 +34,7 @@
             </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, neque!
+              Praesentium, neque! Lorem ipsum dolor sit amet consectetur.
             </p>
           </div>
         </div>
@@ -47,7 +46,7 @@
             </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, neque!
+              Praesentium, neque! Lorem ipsum dolor sit amet consectetur.
             </p>
           </div>
         </div>
@@ -59,7 +58,7 @@
             </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, neque!
+              Praesentium, neque! Lorem ipsum dolor sit amet consectetur.
             </p>
           </div>
         </div>
@@ -73,39 +72,46 @@
 }
 
 .icon p {
+  /* font-family: cursive; */
+  /* font-family: "Josefin Sans", sans-serif; */
   color: #6b6161;
-  font-size: 20px;
+  font-size: 15px;
   padding-bottom: 40px;
   margin-top: 25px;
   margin-left: 3px;
 }
-h2 {
+.heading h2 {
+  /* font-family: "Josefin Sans", sans-serif; */
+  color: #3e2828;
+  font-size: 45px;
   text-transform: uppercase;
-  color: #6b6161;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 64px;
   font-weight: 600;
   margin-bottom: 53px;
   margin-top: -27px;
+}
+.icon {
+  padding-right: 45px;
 }
 h5 {
   color: #9e005d;
 }
 
-h3 {
+.icon h3 {
+  line-height: 32px;
   padding-right: 15px;
-  color: #4a4545;
+  color: #6b6161;
 }
 .heading {
   margin-top: 11px;
   font-size: 30px;
 }
-.content__wrapper {
+.content__wrapper p {
+  margin-top: 85px;
+  line-height: 32px;
   width: 550px;
   margin-right: 111px;
   color: #6b6161;
-  margin-top: 122px;
-  font-size: 20px;
+  font-size: 23px;
 }
 .offer__heading {
   display: flex;
@@ -114,9 +120,14 @@ h3 {
 .cards__wrapper {
   display: flex;
   padding: 10px;
+  margin-top: 34px;
   /* margin: 10px; */
 }
-
+.cards__wrapper .icon p {
+  width: 250px;
+  word-spacing: 2px;
+  line-height: 25px;
+}
 .cards__wrapper i img {
   color: aliceblue;
   background-color: #9e2e54;

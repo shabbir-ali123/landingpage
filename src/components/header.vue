@@ -40,11 +40,11 @@ export default {
 header {
   position: fixed;
   width: 100%;
-  /* border-bottom: 1px solid #cccccc; */
+  border-bottom: 1px solid #cccccc;
 }
 .active {
   background-color: rgba(0, 0, 0, 0.692);
-  color: aqua;
+  border-bottom: none;
 }
 .navbar {
   display: flex;
@@ -66,17 +66,19 @@ a {
 .btn {
   height: 38px;
   text-transform: capitalize;
-  font-size: large;
+  font-size: 18px;
+  font-weight: 600;
   color: white;
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
   border: 3px solid white;
   background-color: transparent;
   cursor: pointer;
   width: 143px;
-  box-shadow: 0px 0px 15px currentcolor;
+  outline: none;
 }
 .btn:hover {
-  background-color: black;
+  box-shadow: 0px 0px 15px currentcolor;
+  background-color: palevioletred;
   border: 2px solid gray;
 }
 .head li {

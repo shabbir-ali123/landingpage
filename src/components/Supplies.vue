@@ -17,7 +17,8 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
           explicabo natus asperiores quisquam doloremque ab blanditiis molestias
-          itaque placeat nihil!
+          itaque placeat nihil! Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Numquam, ipsa!
         </p>
       </div>
     </div>
@@ -36,17 +37,19 @@
   padding-bottom: 46px;
 }
 .img__wrapper img {
+  margin-top: 35px;
   height: 438px;
-  width: 517px;
-  box-shadow: 1px solid gray;
+  width: 580px;
+  box-shadow: 0px 0px 20px lightgray;
 }
 
 .detail__wrapper {
   margin: 30px;
 }
-p {
+.detail__wrapper p {
+  line-height: 25px;
+  width: 500px;
   margin-top: 50px;
-  font-family: cursive;
   color: #6b6161;
 }
 .change {

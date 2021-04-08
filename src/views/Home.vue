@@ -49,13 +49,15 @@ export default {
   text-transform: uppercase;
   color: #fff;
 }
-p {
+.wrapper p {
+  line-height: 25px;
   text-transform: capitalize;
   margin-left: 7px;
   padding-bottom: 10px;
   margin-top: -31px;
 }
 .btn1 {
+  /* font-family: "Josefin Sans", sans-serif; */
   border-radius: 38px;
   color: white;
   text-transform: capitalize;
@@ -64,11 +66,13 @@ p {
   height: 44px;
   /* outline: none; */
   border: none;
-  box-shadow: 0px 0px 15px currentcolor;
+
   font-size: 15px;
   margin-left: 3px;
+  outline: none;
 }
 .btn1:hover {
+  box-shadow: 0px 0px 15px currentcolor;
   background-color: hotpink;
   cursor: pointer;
 }

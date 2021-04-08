@@ -26,7 +26,8 @@
   color: white;
 }
 .sale__heading {
-  padding-top: 264px;
+  line-height: 60px;
+  padding-top: 230px;
 }
 .discount {
   color: palevioletred;
@@ -35,30 +36,32 @@
   padding: 0px;
   margin: 0px;
   font-size: xxx-large;
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
   text-transform: uppercase;
 }
-p {
+.sale__heading p {
   margin-left: 549px;
   width: 400px;
-  font-family: sans-serif;
-  margin-top: 24px;
+  /* font-family: "Josefin Sans", sans-serif; */
+  line-height: 25px;
+  margin-top: 10px;
 }
 button {
   border-radius: 38px;
+  /* font-family: "Josefin Sans", sans-serif; */
   color: white;
   text-transform: capitalize;
   background-color: #9e005d;
   width: 180px;
   height: 44px;
-  /* outline: none; */
   border: none;
   font-size: 15px;
   cursor: pointer;
-  margin-top: 43px;
-  box-shadow: 0px 0px 15px currentcolor;
+  margin-top: 30px;
+  outline: none;
 }
 button:hover {
+  box-shadow: 0px 0px 15px currentcolor;
   background-color: palevioletred;
 }
 </style>

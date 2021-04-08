@@ -39,7 +39,12 @@ export default {
 
 <style>
 body {
+  margin: 0px;
+  font-family: "Josefin Sans", sans-serif !important;
+}
+.main__wrapper {
   font-family: "Josefin Sans", sans-serif;
+  line-height: 25px;
 }
 h3,
 a {
@@ -52,9 +57,5 @@ a {
   width: 80%;
   margin: auto;
   padding: 0;
-}
-body {
-  margin: 0px;
-  font-family: "Josefin Sans", sans-serif;
 }
 </style>
