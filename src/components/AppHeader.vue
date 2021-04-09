@@ -33,7 +33,9 @@
 </template>
 <script>
 export default {
-  props: ["active"]
+  props: {
+    active: String
+  }
 };
 </script>
 <style scoped>
