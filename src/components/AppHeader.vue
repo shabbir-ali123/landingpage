@@ -1,6 +1,9 @@
 <template>
-  <header :class="active ? 'active' : null">
+  <header :class="scrollActive ? 'active' : null">
     <div class="navbar container">
+      <div class="toggle">
+        <button>Menu</button>
+      </div>
       <div class="brand">
         <router-link to="/">
           <img src="../assets/logo.png" alt="" />
@@ -8,8 +11,8 @@
       </div>
 
       <nav>
-        <ul class="head ">
-          <li>
+        <ul class="menu ">
+          <li class="menu__items">
             <router-link to="/">
               home
             </router-link>
@@ -34,7 +37,7 @@
 <script>
 export default {
   props: {
-    active: String
+    scrollActive: Boolean
   }
 };
 </script>
@@ -44,15 +47,32 @@ header {
   width: 100%;
   border-bottom: 1px solid #cccccc;
 }
-.active {
-  background-color: rgba(0, 0, 0, 0.692);
-  border-bottom: none;
-}
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
+}
+.toggle {
+  display: none;
+}
+@media (max-width: 767px) {
+  .navbar ul {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .toggle {
+    display: inline-block;
+    /* position: absolute; */
+    cursor: pointer;
+  }
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.692);
+  border-bottom: none;
 }
 .navbar .brand img {
   width: 120px;
@@ -83,7 +103,7 @@ a {
   background-color: palevioletred;
   border: 2px solid gray;
 }
-.head li {
+.menu li {
   padding: 30px;
 }
 </style>

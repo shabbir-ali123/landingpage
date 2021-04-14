@@ -4,7 +4,7 @@
       <div class="form__content">
         <h2>book appointment</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Autem
           doloremque quam consectetur commodi
         </p>
       </div>
@@ -16,23 +16,23 @@
             </label>
             <label for=""> <input type="number" placeholder="Phone" /> </label
             ><br />
-          </div>
-          <div class="labels">
             <label for="">
               <input type="email" placeholder="Email" />
             </label>
-            <label for="">
-              <input type="text" placeholder="Select Service" /> </label
-            ><br />
-          </div>
-          <div class="labels">
-            <label for="">
-              <input type="number" placeholder="Select Date " />
-            </label>
-            <label for="">
-              <input type="number" placeholder="Select Time" /> </label
-            ><br />
-            <textarea placeholder="Your Message"></textarea>
+            <select name="" id="select" >
+            <option value="">Select Service</option>
+              /></option>
+              </select>
+            <br />
+          <select name="" id="select" >
+            <option value="">Select Date</option>
+              /></option>
+              </select>
+               <select name="" id="select" >
+            <option value="">Select Time</option>
+              /></option>
+              </select>
+            <br />
           </div>
           <button>make an appointments</button>
         </form>
@@ -42,31 +42,42 @@
 </template>
 <style scoped>
 .form__wrapper {
+  margin: 0px;
+  /* width: auto; */
   /* font-family: "Josefin Sans", sans-serif; */
   text-align: center;
-  height: 100vh;
+  height: auto;
   background-color: #9e005d;
 }
 .form__content p {
   color: aliceblue;
   /* font-family: "Josefin Sans", sans-serif; */
   display: inline-block;
-  width: 400px;
+  /* width: 100%; */
   margin-top: -9px;
   margin-bottom: 5px;
-  padding: 0px;
+  padding: 10px 10px;
   line-height: 25px;
+}
+#select{
+    padding-left: 15px;
+  width: 383px;
+  height: 55px;
+  outline: none;
+   margin: 7px;
+    color:  #696868;
+    border: transparent;
 }
 .form__content h2 {
   font-size: 45px;
   text-transform: uppercase;
   font-weight: 600;
-  padding-top: 35px;
+  padding-top: 52px;
   color: white;
   /* font-family: "Josefin Sans", sans-serif; */
 }
 .form__content {
-  padding: 20px;
+  padding-top: 5px;
 }
 input {
   outline: none;
@@ -78,15 +89,24 @@ input {
   /* margin-top: 10px; */
   margin: 7px;
 }
-textarea {
+@media (max-width:462px) {
+  input{
+    /* margin-right: 10px; */
+  }
+}
+@media (min-width: 548px) and (max-width: 900px) {
+.message{
+      width: 500px;
+    padding-left: 0px;
+  }
+}
+
+.message {
   outline: none;
-  width: 760px;
+  width: 765px;
   height: 83px;
   margin-top: 18px;
   padding-left: 15px;
-}
-.main__form {
-  margin-top: 10px;
 }
 form button {
   border-radius: 38px;
@@ -98,10 +118,11 @@ form button {
   /* font-family: "Josefin Sans", sans-serif; */
   /* outline: none; */
   border: none;
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 15px;
   cursor: pointer;
   outline: none;
+  margin-bottom: 50px;
 }
 button:hover {
   box-shadow: 0px 0px 7px currentcolor;

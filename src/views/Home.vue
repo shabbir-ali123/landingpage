@@ -49,6 +49,15 @@ export default {
   text-transform: uppercase;
   color: #fff;
 }
+@media (min-width: 200px) and (max-width: 1123px) {
+  #heroSection {
+    height: 100vh;
+    /* width: 100vh; */
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
 .wrapper p {
   line-height: 25px;
   text-transform: capitalize;
@@ -80,6 +89,7 @@ export default {
   margin-top: 133px;
 }
 .home__heading {
+  padding-bottom: 16px;
   margin-bottom: -44px;
   text-transform: uppercase;
   font-size: 35px;

@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="Main__wrapper ">
-      <Header :active="active" />
+      <Header :scrollActive="scrollActive" />
       <router-view></router-view>
     </div>
   </div>
@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       scrollPosition: null,
-      active: false
+      scrollActive: false
     };
   },
   components: {
@@ -22,11 +22,27 @@ export default {
   methods: {
     updateScroll() {
       this.scrollPosition = window.scrollY;
-      console.log(this.scrollPosition, this.active);
+      console.log(this.scrollPosition, this.scrollActive);
       if (this.scrollPosition > 50) {
-        this.active = true;
+        this.scrollActive = true;
       } else {
-        this.active = false;
+        this.scrollActive = false;
+        // }
+        // const mq = window.matchMedia("[max-width: 500px]");
+        // if (mq.matches) {
+        //   document.body.style.color = "red";
+        //   const Bar = document.getElementsByClassName(".navbar");
+        //   const Toggle = document.getElementsByClassName(".toggle");
+
+        //   Toggle.addEventListener("click", function() {
+        //     if (Bar.style.display != "block") {
+        //       Bar.style.display = "block";
+        //       this.innerHTML = "X";
+        //     } else {
+        //       Bar.style.display = "none";
+        //       this.innerHTML = "MENU";
+        //     }
+        //   });
       }
     }
   },
@@ -41,6 +57,11 @@ export default {
 body {
   margin: 0px;
   font-family: "Josefin Sans", sans-serif !important;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    height: 100%;
+  }
 }
 .main__wrapper {
   font-family: "Josefin Sans", sans-serif;

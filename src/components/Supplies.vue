@@ -1,6 +1,6 @@
 <template>
-  <div class="Supply__wrapper">
-    <div class="Supply__content container">
+  <div class="Supply__wrapper container">
+    <div class="Supply__content ">
       <div class="img__wrapper">
         <img src="../assets/img/1.jpg" alt="" srcset="" />
       </div>
@@ -26,29 +26,40 @@
 </template>
 <style scoped>
 .Supply__content {
-  border-bottom: 2px solid #d1c9c9;
-  margin-top: 110px;
-}
-.Supply__content {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
   margin-top: 42px;
   padding-bottom: 46px;
+  border-bottom: 2px solid #d1c9c9;
 }
-.img__wrapper img {
-  margin-top: 35px;
-  height: 438px;
-  width: 580px;
-  box-shadow: 0px 0px 20px lightgray;
+@media (min-width: 200px) and (max-width: 1123px) {
+  .Supply__content {
+    /* width: 100%; */
+    flex-direction: column;
+    /* text-align: center; */
+  }
+  .detail__wrapper {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .img__wrapper img {
+    width: 100%;
+  }
 }
 
+.img__wrapper img {
+  margin-top: 35px;
+  height: auto;
+  /* padding-left: 200px; */
+  box-shadow: 0px 0px 20px lightgray;
+}
 .detail__wrapper {
-  margin: 30px;
+  padding-left: 50px;
 }
 .detail__wrapper p {
   line-height: 25px;
-  width: 500px;
+  /* width: 500px; */
   margin-top: 50px;
   color: #6b6161;
 }

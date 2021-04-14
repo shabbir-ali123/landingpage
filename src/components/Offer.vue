@@ -1,6 +1,6 @@
 <template>
-  <div class="Main__wrapper   ">
-    <div class="offer__wrapper container ">
+  <div class="Main__wrapper  ">
+    <div class="offer__wrapper container  ">
       <div class="offer__heading">
         <div class="heading">
           <h5>services</h5>
@@ -8,7 +8,7 @@
         </div>
         <div class="content__wrapper">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
             eveniet unde incidunt error praesentium in sapiente placeat esse
           </p>
         </div>
@@ -67,8 +67,9 @@
   </div>
 </template>
 <style scoped>
-.main__wrapper {
-  height: 100vh;
+.offer__wrapper {
+  border-top: 2px solid #d1c9c9;
+  margin-top: 4px;
 }
 
 .icon p {
@@ -93,12 +94,15 @@
   padding-right: 45px;
 }
 h5 {
+  font-weight: 400;
+  margin-top: 30px;
+  text-transform: uppercase;
   color: #9e005d;
 }
 
 .icon h3 {
   line-height: 32px;
-  padding-right: 15px;
+  /* padding-right: 15px; */
   color: #6b6161;
 }
 .heading {
@@ -108,14 +112,31 @@ h5 {
 .content__wrapper p {
   margin-top: 85px;
   line-height: 32px;
-  width: 550px;
-  margin-right: 111px;
   color: #6b6161;
   font-size: 23px;
 }
 .offer__heading {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 998px) {
+  .cards__wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .cards__wrapper .icon p {
+    padding-right: 0px;
+    width: auto;
+  }
+  .offer__heading {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 1123px) {
+  .cards__wrapper {
+    flex-wrap: wrap;
+  }
 }
 .cards__wrapper {
   display: flex;

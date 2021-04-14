@@ -1,7 +1,7 @@
 <template>
   <div class="Footer__wrapper  ">
-    <div class="hello container">
-      <div class="wrapp  ">
+    <div class="hello ">
+      <div class="wrapp container ">
         <div class="footer__content ">
           <div class="footer__heading">
             <h2>Book your appointment now!</h2>
@@ -32,7 +32,7 @@
 </template>
 <style scoped>
 .Footer__wrapper {
-  height: 40vh;
+  width: 100%;
   background-color: black;
   color: white;
   /* font-family: "Josefin Sans", sans-serif; */
@@ -45,7 +45,7 @@
 }
 .footer__heading {
   padding-top: 35px;
-  margin-right: 350px;
+  margin-right: 220px;
 }
 .footer__heading h2 {
   font-size: 40px;
@@ -72,7 +72,7 @@
   padding-left: 20px;
 }
 .copy__wrapper .link {
-  margin-right: 620px;
+  margin-right: 475px;
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
@@ -80,5 +80,30 @@
 }
 .icons img:hover {
   background-color: palevioletred;
+}
+@media (min-width: 200px) and (max-width: 1123px) {
+  .footer__icon .icons {
+    margin-left: 30px;
+    display: flex;
+    margin-bottom: 70px;
+  }
+  .footer__icon .icons img {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+  }
+  .footer__heading {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+  .copy__wrapper .link {
+    margin-right: 0px;
+  }
+  .link p {
+    padding-left: 0px;
+  }
+  .right p {
+    margin-left: 76px;
+  }
 }
 </style>

@@ -7,8 +7,8 @@
           on first visit
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi
-          autem tempora architecto sunt ad!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Sint commodi autem tempora architecto sunt ad!
         </p>
         <button>make an applications</button>
       </div>
@@ -19,32 +19,30 @@
 .sale__wrapper {
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../assets/img/3.jpg);
-  height: 100vh;
+  /* height: auto; */
   text-align: center;
   color: white;
 }
 .sale__heading {
   line-height: 60px;
-  padding-top: 230px;
 }
 .discount {
   color: palevioletred;
 }
 .heading {
-  padding: 0px;
+  padding-top: 159px;
   margin: 0px;
   font-size: xxx-large;
   /* font-family: "Josefin Sans", sans-serif; */
   text-transform: uppercase;
 }
 .sale__heading p {
-  margin-left: 549px;
-  width: 400px;
+  /* margin-left: 549px; */
   /* font-family: "Josefin Sans", sans-serif; */
   line-height: 25px;
-  margin-top: 10px;
 }
 button {
   border-radius: 38px;
@@ -57,8 +55,9 @@ button {
   border: none;
   font-size: 15px;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 40px;
   outline: none;
+  margin-bottom: 130px;
 }
 button:hover {
   box-shadow: 0px 0px 15px currentcolor;
